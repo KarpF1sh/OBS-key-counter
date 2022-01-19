@@ -1,0 +1,68 @@
+body{
+    background-color: #181818;
+}
+
+p {
+    font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+    font-size: 45px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 15.4px;
+}
+
+.countText{
+    color: lightgray;
+    text-shadow: #000000;
+}
+
+.center {
+    background-color: #282828;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.main-container {
+    padding: 35px;
+    height: 80ex;
+    width: 100ex;
+    background-image: linear-gradient(to bottom, #282828 0%, #282828 100%), linear-gradient(to bottom, #282828 0%, #282828 100%);
+    background-clip: content-box, padding-box;
+  }
+
+#image{
+    padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    visibility: visible;
+    height: 70%;
+    max-width:100%;
+    max-height:100%;
+}
+
+progress {
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    border-radius: 1px; 
+    height: 22px;
+    color: rgb(25, 149, 25);
+    box-shadow: 1px 1px 4px rgba( 0, 0, 0, 0.5 );
+}
+progress::-webkit-progress-bar {
+    background-color: #b3b3b3;
+    border-radius: 1px;
+}
+progress::-webkit-progress-value {
+    background-color: rgb(25, 149, 25);
+    border-radius: 1px;
+}
+progress::-moz-progress-bar {
+    background-color: #b3b3b3;
+    border-radius: 1px;
+}

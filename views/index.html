@@ -1,0 +1,56 @@
+<script src="/socket.io/socket.io.js"></script>
+<script src="jquery-3.5.1.min.js"></script>
+<link rel="stylesheet" href="style.css">
+<html>
+    <body>
+        <div class="center vertical-center main-container">
+            <img src="images/tmp.jpg" id="image">
+            <progress id="progress" value="0" max="100"></progress>
+            <p class="countText">Clicks for boobs:</p>
+            <p class="countText" id="countText"></p>
+        </div>
+    </body>
+</html>
+<script>
+    // Socket
+    var socket = io();
+
+    // Element variables
+    var Progress = document.getElementById("progress");
+    var Image = document.getElementById("image");
+    var countText = document.getElementById("countText")
+    
+    // Image path variables
+    // TODO make this dynamic?
+    var finish = "images/finish.jpeg";
+    var temp = "images/tmp.jpg";
+
+    // Default to million
+    var max = 1000000;
+
+    // Socket message handles
+    // TODO make these safer?
+    socket.on("Max", function(msg) {
+        // Change max
+        // TODO: Do not blindly accept given data
+        max = msg;
+        console.log(max);
+    });
+
+    socket.on("Count", function(msg) {
+        // Change displayed text
+        // Again, TODO: Do not blindly accept given data
+        countText.innerHTML = msg;
+
+        // Claculate and set prgress bar
+        Progress.value = msg/max*100;
+
+        // Handle image swapping
+        if (msg == 0){
+            Image.src = finish;
+        } else {
+            Image.src = temp;
+        }
+        //console.log("message:", msg);
+    });
+</script>
