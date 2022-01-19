@@ -36,7 +36,7 @@ Running:
 Configuring keys:
     You can set up your keybinds in keys.txt
     These are the keys that will cause the counter to change
-    The daufault keys are "weopzx,."
+    The default keys are "weopzx,."
 
     To change the keys you can use the keys.txt file as an example.
     Put each key on a new line.
