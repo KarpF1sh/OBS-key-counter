@@ -6,7 +6,8 @@ Key press counter for rhythm games to use with OBS.
 # Windows:
 Before running:
 1. Install node.js first!
-    Install this older version of node (IoHook module needs older module version 83)
+    Install this older version of node
+    (IoHook needs older module version (83))
     https://nodejs.org/download/release/v14.18.3/node-v14.18.3-x64.msi
     - Check the "install chocolatey" chekbox during install
     - Reboot your computer before continuing to step 2!
