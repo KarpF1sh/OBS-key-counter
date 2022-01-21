@@ -11,9 +11,10 @@ app.use(express.static(__dirname + '/views'));
 
 // Savefile paht
 const savePath = './progress.txt'
-const keyCharPath = './keys.txt'
+//const keyCharPath = './keys.txt'
 const defaultCount = 1000000;
 
+//Set your keybinds here!
 var keyCodes = new Set([keycode('w'), keycode('e'), keycode('o'), keycode('p')]);
 var waiting = false;
 var counterStart;
@@ -58,7 +59,7 @@ try {
 } catch(err) { 
     counterStart = defaultCount; 
 }
-
+/*
 // Jank way to check if file exists
 try {
     fs.statSync(keyCharPath);
@@ -73,7 +74,7 @@ try {
 } catch(err) { 
     console.log(err);
 }
-//------------------------
+//------------------------*/
 
 
 //console.log(counterStart);
