@@ -9,11 +9,12 @@ https://nodejs.org/download/release/v14.18.3/node-v14.18.3-x64.msi
 
 ### Setting up:
 
-Run `npm i` in the source directory or run the "setup-project" batchfile to install the required dependencies
+Run `npm i` in the source directory,  
+or if you are running Windows just run the "setup-project" batchfile to install the required dependencies
 
 ### Running:
 
-Run `npm start` or open the "start" batch file
+Run `npm start` or open the "start" batch file if you are on Windows
 
 ### Running:
 
